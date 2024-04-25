@@ -1,0 +1,99 @@
+.table {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+
+  .table-div {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: var(--rad);
+    padding: 10px;
+
+    
+    .table-container {
+      border-collapse: collapse;
+    }
+    table {
+     width: 100%;
+
+      .table-heading {
+        background-color: var(--accent);
+        color: white;
+        // position: sticky;
+        // top: 120px;
+
+        th {
+          height: 50px;
+          width: 200px;
+          border: 1px solid rgba(0, 0, 0, 0.397);
+          padding: 0 10px;
+
+          &.email {
+            width: 250px;
+          }
+
+          &.message {
+            width: 500px;
+          }
+
+          &.number {
+            width: 300px;
+          }
+
+          &.delete{
+            width: 80px;
+          }
+        }
+      }
+
+      .table-data {
+        td {
+          height: 50px;
+          padding: 0 10px ;
+          border: 1px solid rgba(0, 0, 0, 0.397);
+          text-align: center;
+          color: rgba(54, 54, 54, 0.718);
+
+      
+
+            button {
+              height: 40px;
+              width: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 0 10px;
+          
+              svg{
+                font-size: 30px;
+                color: var(--accent);
+              }
+            
+          }
+        }
+      }
+    }
+
+    .load-more{
+    padding-top: 30px;
+    }
+  }
+
+  
+}
+@media screen and (max-width:1500px) {
+
+    .table{
+        padding: 0 !important;
+    }
+    .table-div{
+        // width: 2000px !important;
+        overflow-x: scroll !important;
+    }
+
+}
